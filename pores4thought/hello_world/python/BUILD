@@ -1,14 +1,11 @@
-load("@hello_world_python_deps//:requirements.bzl", "requirement")
+load("@python_deps//:requirements.bzl", "requirement")
 
 py_test(
-    name = "test",
-    srcs = ["test.py"],
-    main = "test.py",
+    name = "hello_world",
+    srcs = ["hello_world.py"],
+    main = "hello_world.py",
     deps = [
         requirement("numpy"),
-        requirement("ImageHash"),
-        requirement("click"),
-        requirement("protobuf"),
     ],
     size = "small",
 )
