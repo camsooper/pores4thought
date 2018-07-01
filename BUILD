@@ -20,4 +20,3 @@ config_setting(
         "cpu": "x64_windows",
     },
 )
-
